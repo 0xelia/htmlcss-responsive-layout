@@ -27,13 +27,17 @@ img {
 /* GENERALS */
 
 section {
-    padding: 3rem 1.5rem;
+    padding: 6rem 1.5rem;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+}
+
+.small-container {
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .button {
@@ -57,9 +61,6 @@ section {
     text-align: center;
 }
 
-/* .grow-2 {
-    flex-grow: 2;
-} */
 
 .bkg-white__text-black{
     background-color: white;
@@ -103,7 +104,12 @@ section {
 }
 
 .hero .col {
-    flex-basis: calc((100% / 3) - 22px);
+    flex-basis: 330px;
+    flex-grow: 1;
+}
+
+.hero .col.grow-2 {
+    flex-basis: 660px;
 }
 
 /* Cards */
@@ -113,19 +119,37 @@ section {
 }
 
 .card {
+    height: 100%;
     background-color: #B6DDFF;
     color: #6E869A;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
+    font-size: 1.1;
+    font-weight: 700;
+    line-height: 1.6rem;
+    border-radius: 20px;
 }
 
+.card img {
+    margin-bottom: -4rem;
+    display: block;
+}
+
+
 .card h4 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: #0084FD;
+    padding-bottom: 1rem;
+}
+
+
+.grow-2 p{
+    margin-bottom: 4rem;
 }
 
 .card .icons {
     color: #0084FD;
-    font-size: 4rem;
+    font-size: 6rem;
+    padding-bottom: 1.2rem;
 }
 .card-row{
     display: flex;
@@ -137,3 +161,23 @@ section {
     display: flex;
 }
 
+.grow-2 .button {
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+}
+
+
+/* TOPIC PLANING SECTION */
+
+.topic {
+    background-color: #9792E4;
+    color: white;
+}
+
+.topic .row {
+    gap: 50px;
+}
+
+.topic .col {
+    flex-basis: 50%;
+}
