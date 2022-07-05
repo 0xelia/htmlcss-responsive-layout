@@ -53,9 +53,13 @@ section {
     gap: 30px;
 }
 
-.col {
-
+.text-center {
+    text-align: center;
 }
+
+/* .grow-2 {
+    flex-grow: 2;
+} */
 
 .bkg-white__text-black{
     background-color: white;
@@ -66,6 +70,8 @@ section {
     background-color: #0084FD;
     color: white;
 }
+
+
 /* HEADER */
 
 .main-header {
@@ -87,3 +93,47 @@ section {
     padding-left: 0.7rem;
     padding-right: 0.7rem;
 }
+
+
+
+/* HERO */
+
+.hero .row {
+    flex-wrap: wrap;
+}
+
+.hero .col {
+    flex-basis: calc((100% / 3) - 22px);
+}
+
+/* Cards */
+
+.hero .row {
+    gap: 22px;
+}
+
+.card {
+    background-color: #B6DDFF;
+    color: #6E869A;
+    padding: 2rem 1rem;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    color: #0084FD;
+}
+
+.card .icons {
+    color: #0084FD;
+    font-size: 4rem;
+}
+.card-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .col:first-child .card {
+    display: flex;
+}
+
