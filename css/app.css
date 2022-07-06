@@ -65,6 +65,10 @@ section {
     text-align: center;
 }
 
+.bkg-violet {
+    background-color: #9792E4;
+    color: white;
+}
 
 .bkg-white__text-black{
     background-color: white;
@@ -115,12 +119,14 @@ section {
 
 .hero .col.grow-2 {
     flex-basis: 660px;
+    flex-grow: 2;
 }
 
 /* Cards */
 
 .hero .row {
     gap: 22px;
+    align-content: center;
 }
 
 .card {
@@ -146,6 +152,9 @@ section {
     padding-bottom: 1rem;
 }
 
+.hero .card .landscape {
+    padding-bottom: 0;
+}
 
 .grow-2 p{
     margin-bottom: 4rem;
@@ -174,10 +183,6 @@ section {
 
 /* TOPIC PLANING SECTION */
 
-.topic {
-    background-color: #9792E4;
-    color: white;
-}
 
 .topic h4 {
     font-size: 2rem ;
@@ -323,3 +328,43 @@ section {
 }
 
 /* BENEFITS */
+
+.benefit-card {
+    background-color: white;
+    color: #6E869A;
+    padding: 3rem 2rem 2rem 2rem;
+    border-radius: 30px;
+}
+
+.benefits .row{
+    padding-top: 3rem;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.benefits .col {
+    flex-basis: calc((100% / 3) - 30px );
+    min-width: 300px;
+}
+
+.benefit-card h5 {
+    font-size: 4rem;
+    color: #9792E4 ;
+}
+
+.benefit-card h6 {
+    font-size: 1.8rem;
+    color: #9792E4;
+    padding-bottom: 1rem;
+}
+
+.benefit-card p {
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.benefit-card .button {
+    display: inline-block;
+    font-weight: 700;
+    padding: 1rem 3rem;    
+}
