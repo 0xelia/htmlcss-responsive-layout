@@ -51,6 +51,10 @@ section {
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -79,6 +83,7 @@ section {
     background-color: #0084FD;
     color: white;
     font-size: 1.2rem;
+    padding: 1rem 0;
 }
 
 .header-flex {
@@ -190,7 +195,7 @@ section {
 }
 
 .topic .col:last-child {
-    padding: 8rem 3.5rem 0 3.5rem;
+    padding: 8rem 2rem 0 2rem;
     align-items: flex-end;
 }
 
@@ -230,3 +235,91 @@ section {
 .topic .col:first-child {
     justify-content: space-between;
 }
+
+/* TESTIMONIALS */
+.intro-testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.intro-testimonials h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #9792E4;
+}
+
+.intro-testimonials h3 {
+    text-transform: uppercase;
+    font-weight: 400
+}
+
+.intro-testimonials p {
+    line-height: 2rem;
+}
+
+ .row.column {
+    gap: 40px;
+    padding-top: 2rem;
+}
+
+.testimonial .col {
+    flex-basis: 100%;
+}
+
+.testimonial-wrapper{
+    background-color: #9792E4;
+    color: white;
+    display: flex;
+    padding: 2rem;
+    border-radius: 40px;
+    gap: 2rem;
+    align-items: center;
+}
+
+.cit {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.4ì2rem;
+}
+
+.testimonial-pic figure{
+    height: 200px;
+    aspect-ratio: 1;
+}
+
+.testimonial-pic img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.cit .quotes::before {
+    content: "\201C";
+    font-size: 3rem;
+    margin-bottom: -2rem;
+    position: relative;
+    top: 16px;
+}
+
+
+.cit .quotes::after {
+    content: "\201D";
+    font-size: 3rem;
+    margin-bottom: -2rem;
+    position: relative;
+    top: 16px;
+}
+
+.cit address {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* BENEFITS */
